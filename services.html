@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Daniel TOUNKARA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><nav class="container nav"><a class="brand" href="index.html">DT</a><button id="menu-toggle" class="menu-toggle" aria-label="menu"><i class="fa-solid fa-bars"></i></button><ul id="nav-links" class="nav-links"><li><a href="index.html">Accueil</a></li><li><a href="about.html">A propos</a></li><li><a href="skills.html">Competences</a></li><li><a href="projects.html">Projets</a></li><li><a class="active" href="services.html">Services</a></li><li><a href="diplomas.html">Diplomes</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+  <main class="page container section">
+    <h1 class="page-title reveal">Services</h1>
+    <p class="projects-intro reveal">Des services data orientés performance, avec une présentation visuelle claire pour accélérer la prise de décision.</p>
+    <div class="cards services-showcase-grid reveal">
+      <article class="card service-showcase">
+        <div class="service-top"><i class="fa-solid fa-chart-line"></i><h3>Analyse de donnees</h3></div>
+        <p>Diagnostic metier, tendances, KPI et recommandations.</p>
+        <div class="service-chart sc-trend">
+          <svg viewBox="0 0 260 90" preserveAspectRatio="none" aria-hidden="true">
+            <polyline points="0,78 32,71 64,66 96,52 128,58 160,36 192,30 224,22 260,14"></polyline>
+          </svg>
+          <div class="kpi-row"><span>Tendance globale</span><strong>+22%</strong></div>
+        </div>
+      </article>
+
+      <article class="card service-showcase">
+        <div class="service-top"><i class="fa-solid fa-table-cells-large"></i><h3>Dashboards</h3></div>
+        <p>Conception de tableaux de bord clairs et pilotables.</p>
+        <div class="service-chart sc-dashboard">
+          <div class="db-grid">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="kpi-row"><span>Lisibilite UX</span><strong>Premium</strong></div>
+        </div>
+      </article>
+
+      <article class="card service-showcase">
+        <div class="service-top"><i class="fa-solid fa-file-excel"></i><h3>Automatisation Excel</h3></div>
+        <p>Fichiers optimises, traitement plus rapide, moins d'erreurs.</p>
+        <div class="service-chart sc-excel">
+          <div class="before-after">
+            <div><small>Avant</small><strong>2h15</strong></div>
+            <div><small>Apres</small><strong>35min</strong></div>
+          </div>
+          <div class="kpi-row"><span>Gain de temps</span><strong>-74%</strong></div>
+        </div>
+      </article>
+
+      <article class="card service-showcase">
+        <div class="service-top"><i class="fa-solid fa-chart-pie"></i><h3>Reporting BI</h3></div>
+        <p>Reporting structure pour direction et equipes operationnelles.</p>
+        <div class="service-chart sc-reporting">
+          <div class="ring"><span>96%</span></div>
+          <div class="kpi-row"><span>Fiabilite reporting</span><strong>Elevée</strong></div>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer class="footer"><div class="container"><p>&copy; <span id="year"></span> Daniel TOUNKARA</p></div></footer>
+  <button id="back-to-top" class="back-to-top" aria-label="haut"><i class="fa-solid fa-arrow-up"></i></button><script src="script.js"></script>
+</body>
+</html>

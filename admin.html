@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Prive | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page container section">
+    <section id="private-admin-center" class="admin-hidden">
+      <h1 class="page-title">Espace prive - Gestion du contenu</h1>
+      <p class="projects-intro">Cette page est reservee a l'administration de tes projets et diplomes.</p>
+
+      <section class="section-sm">
+        <h2>Tous mes projets</h2>
+        <form id="admin-project-form" class="card form-grid">
+          <input id="admin-project-title" type="text" placeholder="Titre du projet" required>
+          <textarea id="admin-project-description" placeholder="Description du projet" required></textarea>
+          <input id="admin-project-tech" type="text" placeholder="Technologie (Power BI, SQL...)" required>
+          <input id="admin-project-link" type="url" placeholder="Lien (optionnel)">
+          <label class="field-label" for="admin-project-image">Image (optionnel)</label>
+          <input id="admin-project-image" type="file" accept="image/*">
+          <button class="btn btn-primary" type="submit">Ajouter le projet</button>
+        </form>
+        <div id="admin-project-list" class="cards"></div>
+      </section>
+
+      <section class="section-sm">
+        <h2>Tous mes diplomes et certificats</h2>
+        <form id="admin-diploma-form" class="card form-grid">
+          <input id="admin-diploma-title" type="text" placeholder="Titre du diplome/certificat" required>
+          <input id="admin-diploma-org" type="text" placeholder="Organisme ou ecole" required>
+          <input id="admin-diploma-year" type="text" placeholder="Annee" required>
+          <input id="admin-diploma-link" type="url" placeholder="Lien (optionnel)">
+          <label class="field-label" for="admin-diploma-file">Fichier (optionnel)</label>
+          <input id="admin-diploma-file" type="file" accept=".pdf,image/*">
+          <button class="btn btn-primary" type="submit">Ajouter le diplome</button>
+        </form>
+        <div id="admin-diploma-list" class="cards diploma-grid"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore-compat.js"></script>
+  <script>
+    window.PORTFOLIO_FIREBASE_CONFIG = {
+      apiKey: "PUT_YOUR_API_KEY",
+      authDomain: "PUT_YOUR_AUTH_DOMAIN",
+      projectId: "PUT_YOUR_PROJECT_ID",
+      storageBucket: "PUT_YOUR_STORAGE_BUCKET",
+      messagingSenderId: "PUT_YOUR_MESSAGING_SENDER_ID",
+      appId: "PUT_YOUR_APP_ID"
+    };
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
